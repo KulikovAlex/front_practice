@@ -4,7 +4,10 @@ class Form extends React.Component {
 
     render() {
         return(
-            <div>Компонент с формой</div>
+            <form onSubmit={this.props.weatherMethod}>
+                <input type="text" name="city" placeholder="City"/>
+                <button>Get the weather</button>
+            </form>
         );
     }
 
